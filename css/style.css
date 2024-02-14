@@ -24,7 +24,7 @@
     transform: translate(-50%,-50%);
     
 }
-kbd:hover{
+.kbdstyle{
  background-color: #FFA500;
  transform: scale(1.2);
  cursor: pointer;

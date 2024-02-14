@@ -29,58 +29,59 @@
         class="border-8 border-[#010313b1] artboard artboard-horizontal w-[80%] h-[320px] rounded-xl p-4 font-poppins items-center justify-center flex flex-col bg-[#ffffffc6] mx-auto"
       >
         <p
-          class="text-white text-xs md:text-sm p-3 bg-[#010313b1] absolute top-2 rounded-b-xl"
+          class="text-white text-center text-xs md:text-sm p-3 bg-[#010313b1] absolute top-2 rounded-b-xl"
         >
-          Don't watch keyboard while playing...
+          Time Left : <span id="timeer" class=" text-lg font-bold">10</span>
         </p>
-        <p class="text-black text-6xl md:text-8xl font-semibold">Y</p>
+        <p id="charPlace" class="text-black text-6xl md:text-8xl font-semibold">Y</p>
       </div>
       <!-- keybord -->
       <div class="mt-2 p-2">
         <div class="flex justify-center gap-2 my-1 w-full">
-          <kbd class="kbd">q</kbd>
-          <kbd class="kbd">w</kbd>
-          <kbd class="kbd">e</kbd>
-          <kbd class="kbd">r</kbd>
-          <kbd class="kbd">t</kbd>
-          <kbd class="kbd">y</kbd>
-          <kbd class="kbd">u</kbd>
-          <kbd class="kbd">i</kbd>
-          <kbd class="kbd">o</kbd>
-          <kbd class="kbd">p</kbd>
+          <kbd id="q" class="kbd">q</kbd>
+          <kbd id="w" class="kbd">w</kbd>
+          <kbd id="e" class="kbd">e</kbd>
+          <kbd id="r" class="kbd">r</kbd>
+          <kbd id="t" class="kbd">t</kbd>
+          <kbd id="y" class="kbd">y</kbd>
+          <kbd id="u" class="kbd">u</kbd>
+          <kbd id="i" class="kbd">i</kbd>
+          <kbd id="o" class="kbd">o</kbd>
+          <kbd id="p" class="kbd">p</kbd>
         </div>
         <div class="flex justify-center gap-2 my-1 w-full">
-          <kbd class="kbd">a</kbd>
-          <kbd class="kbd">s</kbd>
-          <kbd class="kbd">d</kbd>
-          <kbd class="kbd">f</kbd>
-          <kbd class="kbd">g</kbd>
-          <kbd class="kbd">h</kbd>
-          <kbd class="kbd">j</kbd>
-          <kbd class="kbd">k</kbd>
-          <kbd class="kbd">l</kbd>
+          <kbd id="a" class="kbd">a</kbd>
+          <kbd id="s" class="kbd">s</kbd>
+          <kbd id="d" class="kbd">d</kbd>
+          <kbd id="f" class="kbd">f</kbd>
+          <kbd id="g" class="kbd">g</kbd>
+          <kbd id="h" class="kbd">h</kbd>
+          <kbd id="j" class="kbd">j</kbd>
+          <kbd id="k" class="kbd">k</kbd>
+          <kbd id="l" class="kbd">l</kbd>
         </div>
         <div class="flex justify-center gap-2 my-1 w-full">
-          <kbd class="kbd">z</kbd>
-          <kbd class="kbd">x</kbd>
-          <kbd class="kbd">c</kbd>
-          <kbd class="kbd">v</kbd>
-          <kbd class="kbd">b</kbd>
-          <kbd class="kbd">n</kbd>
-          <kbd class="kbd">m</kbd>
-          <kbd class="kbd">/</kbd>
+          <kbd id="z" class="kbd">z</kbd>
+          <kbd id="x" class="kbd">x</kbd>
+          <kbd id="c" class="kbd">c</kbd>
+          <kbd id="v" class="kbd">v</kbd>
+          <kbd id="b" class="kbd">b</kbd>
+          <kbd id="n" class="kbd">n</kbd>
+          <kbd id="m" class="kbd">m</kbd>
+          <kbd id="/" class="kbd">/</kbd>
         </div>
       </div>
       <!-- simple function -->
       <div class="flex flex-row justify-between items-center font-inter text-white font-semibold">
         <div class="rounded-full bg-[#894189] px-5 py-2 text-center ">
-          <p>Life <i class="fa-solid fa-heart-pulse"></i> <span>1</span></p>
+          <p>Life <i class="fa-solid fa-heart-pulse"></i> <span id="life">3</span></p>
         </div>
-        <div class="rounded-full bg-[#360490] px-5 py-2 text-center">Score <i class="fa-solid fa-dollar-sign rounded-full bg-white text-black p-1"></i> <span>1</span></div>
+        <div  class="rounded-full bg-[#360490] px-5 py-2 text-center">Score <i class="fa-solid fa-dollar-sign rounded-full bg-white text-black p-1"></i> <span id="score">0</span></div>
       </div>
     </section>
-    
-    <script src="js/conection.js"></script>
+
+
     <script src="js/game.js"></script>
+    
   </body>
 </html>
