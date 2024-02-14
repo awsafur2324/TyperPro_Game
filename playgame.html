@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typer Pro Game</title>
+    <!-- fab icon -->
+    <link rel="icon" type="image/x-icon" href="images/play.png" />
+      <!-- font awsome -->
+      <script
+      src="https://kit.fontawesome.com/28c020b767.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- tailwind and daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- my style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="min-h-screen bg-[#1E1E1E] overflow-hidden">
+    <img class="w-[40%] min-h-screen center" src="images/background.png" />
+    <section class="center min-w-[90%]">
+      <!-- artbord -->
+      <div
+        class="border-8 border-[#010313b1] artboard artboard-horizontal w-[80%] h-[320px] rounded-xl p-4 font-poppins items-center justify-center flex flex-col bg-[#ffffffc6] mx-auto"
+      >
+        <p
+          class="text-white text-xs md:text-sm p-3 bg-[#010313b1] absolute top-2 rounded-b-xl"
+        >
+          Don't watch keyboard while playing...
+        </p>
+        <p class="text-black text-6xl md:text-8xl font-semibold">Y</p>
+      </div>
+      <!-- keybord -->
+      <div class="mt-2 p-2">
+        <div class="flex justify-center gap-2 my-1 w-full">
+          <kbd class="kbd">q</kbd>
+          <kbd class="kbd">w</kbd>
+          <kbd class="kbd">e</kbd>
+          <kbd class="kbd">r</kbd>
+          <kbd class="kbd">t</kbd>
+          <kbd class="kbd">y</kbd>
+          <kbd class="kbd">u</kbd>
+          <kbd class="kbd">i</kbd>
+          <kbd class="kbd">o</kbd>
+          <kbd class="kbd">p</kbd>
+        </div>
+        <div class="flex justify-center gap-2 my-1 w-full">
+          <kbd class="kbd">a</kbd>
+          <kbd class="kbd">s</kbd>
+          <kbd class="kbd">d</kbd>
+          <kbd class="kbd">f</kbd>
+          <kbd class="kbd">g</kbd>
+          <kbd class="kbd">h</kbd>
+          <kbd class="kbd">j</kbd>
+          <kbd class="kbd">k</kbd>
+          <kbd class="kbd">l</kbd>
+        </div>
+        <div class="flex justify-center gap-2 my-1 w-full">
+          <kbd class="kbd">z</kbd>
+          <kbd class="kbd">x</kbd>
+          <kbd class="kbd">c</kbd>
+          <kbd class="kbd">v</kbd>
+          <kbd class="kbd">b</kbd>
+          <kbd class="kbd">n</kbd>
+          <kbd class="kbd">m</kbd>
+          <kbd class="kbd">/</kbd>
+        </div>
+      </div>
+      <!-- simple function -->
+      <div class="flex flex-row justify-between items-center font-inter text-white font-semibold">
+        <div class="rounded-full bg-[#894189] px-5 py-2 text-center ">
+          <p>Life <i class="fa-solid fa-heart-pulse"></i> <span>1</span></p>
+        </div>
+        <div class="rounded-full bg-[#360490] px-5 py-2 text-center">Score <i class="fa-solid fa-dollar-sign rounded-full bg-white text-black p-1"></i> <span>1</span></div>
+      </div>
+    </section>
+    
+    <script src="js/conection.js"></script>
+    <script src="js/game.js"></script>
+  </body>
+</html>
