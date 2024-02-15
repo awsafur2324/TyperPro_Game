@@ -59,11 +59,35 @@ document.addEventListener("keyup", function keyboardPress(event) {
   }
 });
 
+
+//time cout
+var timerId = setInterval(countdown, 1000);
+var defultTime = 30;
+var timeLeft = 0;
+var setTimeByUser = localStorage.getItem('setTime');
+if (setTimeByUser){
+  timeLeft = setTimeByUser;
+}
+else{
+  timeLeft = defultTime;
+}
+
+function countdown() {
+  if (timeLeft == -1) {
+    clearTimeout(timerId);
+    const lastscore = parseInt(document.getElementById("score").innerText);
+    // use localStorage to save value for next page
+    localStorage.setItem("lastscore", lastscore);
+    window.location.href = "score.html";
+  } else {
+ document.getElementById("timeer").innerText = timeLeft;
+    timeLeft--;
+  }
+}
 //---------------Score.html
 
-function score(){
+function score() {
   const score = localStorage.getItem("lastscore");
   const scoreOutput = document.getElementById("scoreOutput");
   scoreOutput.innerText = score;
 }
-

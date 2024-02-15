@@ -29,8 +29,17 @@
       >
         TYPER PRO GAME
       </h1>
-      <p class="text-white text-lg font-poppins font-medium mt-5">
-        Unleash Your Keyboard Kung Fu : Press “Enter” to Play
+      <p
+        class="flex flex-col justify-center items-center text-white text-lg font-poppins font-medium mt-5"
+      >
+        <span>You can set a time </span
+        ><input
+          value="30"
+          id="timerInput"
+          type="text"
+          class="text-black text-center w-[100px] p-2 rounded-lg mt-2 border-4 border-blue-900"
+          onclick="alert('Default You get 30 sec...\n.........................................................\nBut\n.........................................................\nYou can set your own timer')"
+        />
       </p>
       <button
         id="play"
@@ -39,8 +48,41 @@
       >
         <i class="fa-solid fa-gamepad"></i> Play Now
       </button>
+     
     </section>
-
+    <P class="text-center text-white copy">&copy; All copyright reserves by Khan Awsafur Rahman</P>
+    <!-- Game instruction -->
+    <!-- Open the modal using ID.showModal() method -->
+    <button class="btn rounded-full absolute right-2 top-2" onclick="my_modal_2.showModal()"><i class="fa-solid fa-circle-info"></i></button>
+    <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <h3 class="font-bold text-lg">Game Rules!</h3>
+        <h2 class="py-4 text-lg">A Simple Instruction To Play And Enjoy</h2>
+        <ul class="list-outside list-disc text-slate-800 text-lg p-4">
+          <li>Main Agenda to check your type speed</li>
+          <li>You get a fixed time Around 30 sec.</li>
+          <li>But if you want you can set your custom time</li>
+          <li>Al though you get 3 life or chance</li>
+          <li>If time up or finish of chance are the cause of game over</li>
+        </ul>
+        <p class="text-blue-950">Enjoy the game....</p>
+        <h2 class="text-green-800 text-xl mt-3">Thank You <i class="fa-solid fa-heart"></i></h2>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+    
+    <script>
+      var setTime = document.getElementById("timerInput");
+      setTime.addEventListener("blur", function (e) {
+        localStorage.setItem("setTime", e.target.value);
+      });
+      localStorage.removeItem("setTime");
+    </script>
     <script src="js/game.js"></script>
   </body>
 </html>
